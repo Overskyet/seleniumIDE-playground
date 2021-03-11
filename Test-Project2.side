@@ -1,0 +1,983 @@
+{
+  "id": "6ed90c6c-8135-4c6f-8147-8d1e18317670",
+  "version": "2.0",
+  "name": "Shurygin-Test-Project",
+  "url": "https://www.ozon.ru/product/testirovanie-dot-kom-ili-posobie-po-zhestokomu-obrashcheniyu-s-bagami-v-internet-startapah-149612654/",
+  "tests": [{
+    "id": "e7f8dbe5-ef33-4268-ab29-c5a64f60290c",
+    "name": "new-user-registration",
+    "commands": [{
+      "id": "f73a1c30-d60e-4a83-bcf9-61bcc06451fc",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419922bb-c3be-4540-bffe-98532760e7a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d19873f5-9b2c-4c7f-adac-85c97cead3c2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]",
+      "targets": [
+        ["css=.c5s8 > .f-h2", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/p/b", "xpath:idRelative"],
+        ["xpath=//p/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "4cf3a9ef-051f-40da-972d-7dd3012d040f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/p/b",
+      "targets": [
+        ["css=.c5s8 > .f-h2", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/p/b", "xpath:idRelative"],
+        ["xpath=//p/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Вход')]", "xpath:innerText"]
+      ],
+      "value": "Вход"
+    }, {
+      "id": "8ec564bb-d90e-493b-bdb2-35a82b535b91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/div/div/button",
+      "targets": [
+        ["css=.a8b9 .ui-k8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/div/div/button/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31cd95d7-045e-4d55-a1db-eb293853a4a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/div/div/button",
+      "targets": [
+        ["css=.ui-n3 > .ui-n1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cfd713f-4835-40cb-8367-b89245162d1a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1320b58c-86db-494f-9c50-8aeb4d87bfb4",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='loginOrRegistration']",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9d369be2-aacd-4d21-9fb3-ef262ee1ff11",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Войдите или зарегистрируйтесь, чтобы продолжить"
+    }, {
+      "id": "e5451d84-7a0e-48fd-bdf6-b75285edb881",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/button",
+      "targets": [
+        ["css=.ui-n1", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c95c0d8-48ef-44e7-95b8-c45f0f7915ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[2]/div/label/div/input",
+      "targets": [
+        ["name=phone", "name"],
+        ["css=.ui-av9", "css:finder"],
+        ["xpath=//input[@name='phone']", "xpath:attributes"],
+        ["xpath=//div[@id='loginOrRegistration']/div[2]/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5838272-49ae-4e7b-a1d1-55a6182ce1ec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[4]/a",
+      "targets": [
+        ["linkText=Войти по почте", "linkText"],
+        ["css=.a1c1", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти по почте')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти по почте')]", "xpath:innerText"]
+      ],
+      "value": "Войти по почте"
+    }, {
+      "id": "8df7e87c-a201-4256-bb84-1fd31abe2c75",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/button",
+      "targets": [
+        ["css=.ui-n1", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14c77d28-520f-49c8-8750-538b81bf0ed7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[2]/div/div/p",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "842b68bc-4dc8-4440-869d-71273488271a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[2]/div/div/p",
+      "targets": [
+        ["css=.ui-au5", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Заполните телефон')]", "xpath:innerText"]
+      ],
+      "value": "Заполните телефон"
+    }, {
+      "id": "289200f7-897b-4fc6-afef-21635bd33107",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[4]/a",
+      "targets": [
+        ["linkText=Войти по почте", "linkText"],
+        ["css=.a1c1", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти по почте')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти по почте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a9279c7-f3c4-4253-8eea-a1f8714c3631",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='loginOrRegistration']/div",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ec05c4cd-5524-4808-900b-1acc2b212a5e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Войдите по почте"
+    }, {
+      "id": "dc831404-9de3-46d9-a823-7f97ee5eab31",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[4]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa0ca35e-f9f6-4a48-8226-eb49a9aa99e7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/div/label/div/input",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ui-av9", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d9ba72-2b5c-4915-a0b8-8e39a771b5ce",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[5]/a",
+      "targets": [
+        ["linkText=Вернуться на главный экран", "linkText"],
+        ["css=.a1c1", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться на главный экран')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться на главный экран')]", "xpath:innerText"]
+      ],
+      "value": "Вернуться на главный экран"
+    }, {
+      "id": "d789b83c-7808-48b1-8f5b-0e9a1db84edf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[4]/button/div/div",
+      "targets": [
+        ["css=.ui-n1", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[4]/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bfcdb08-256f-436b-9cc3-316760f0eb76",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/div/div/p",
+      "targets": [
+        ["css=.ui-au5", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Заполните почту')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "35f0db36-8ec1-41e7-871c-4ba404468903",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/div/div/p",
+      "targets": [
+        ["css=.ui-au5", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Заполните почту')]", "xpath:innerText"]
+      ],
+      "value": "Заполните почту"
+    }, {
+      "id": "9db04a90-70ba-432e-99ec-f54a8bd4045d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[5]/a",
+      "targets": [
+        ["linkText=Вернуться на главный экран", "linkText"],
+        ["css=.a1c1", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться на главный экран')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться на главный экран')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8de58fa-3127-4bd0-b062-8c8fbbff12d0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='loginOrRegistration']/div",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ea8584ce-bfce-4009-a0d9-44ed4d829217",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div",
+      "targets": [
+        ["css=.a1b7", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Войдите или зарегистрируйтесь, чтобы продолжить"
+    }, {
+      "id": "e36257a5-b13f-426d-a629-662e649bd7a9",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "c79068ad-aa5f-4ccf-b371-538c2b420088",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div[2]/div[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92d51396-716f-47a9-9f64-c82e5a404bbf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "544c77d0-83f9-456e-a3b9-b6712be5c40c",
+    "name": "pickup-points",
+    "commands": [{
+      "id": "8211399f-81b7-4cd5-b9fd-6a14be07d163",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/geo/moskva/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fde4124-fbcf-4c2d-9ecf-9d3524439972",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68dbcadf-d635-47de-9529-1d141ee074b6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "ebc90523-47ca-4c04-9750-a193de5c4d84",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[1]/h1",
+      "targets": [],
+      "value": "Москва - пункты выдачи заказов OZON"
+    }, {
+      "id": "b45426c0-01b0-43c5-998e-bd31048b17a8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[1]/div/div[1]/div/section/div/ymaps",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0dbd99a6-6c3a-46fd-86fa-d3b6f684c797",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[1]/div/div[2]/div[1]",
+      "targets": [],
+      "value": "Выбор пункта выдачи"
+    }, {
+      "id": "2f87a116-d48d-42a3-8103-96b83545ae2b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[1]/div/div[2]/div[4]/div/div/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d68276a-fc8e-4d11-ba87-25ac0d962ddb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[3]/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afa8f988-c9d4-42ad-8a9a-4af21cbd003c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6a757bd2-d863-403e-82af-02ae0dca4a60",
+    "name": "adding-goods-to-cart",
+    "commands": [{
+      "id": "9de742ba-ce05-4cbd-87b0-3181342bec0d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/product/testirovanie-dot-kom-ili-posobie-po-zhestokomu-obrashcheniyu-s-bagami-v-internet-startapah-149612654/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52895227-514f-4cc1-8be7-63f5a124750f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0114a5f8-41cd-4b61-81b3-b496b1e00462",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[4]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "4923d079-99a8-4207-b62e-55ae9fe993d2",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[2]/div/div/div/div[2]/h1",
+      "targets": [
+        ["css=.b3a8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[2]/div/div/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Тестирование Дот Ком, или Пособие по жестокому обращению с багами в интернет-стартапах')]", "xpath:innerText"]
+      ],
+      "value": "cart-book-name"
+    }, {
+      "id": "f8bf7ac3-f4dd-456d-b78f-1454da9070e2",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div[2]/div[2]/span/span",
+      "targets": [
+        ["css=.c8q7 > span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div[2]/div[2]/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span/span", "xpath:position"]
+      ],
+      "value": "cart-book-price"
+    }, {
+      "id": "8280c8ee-195a-4b6d-ba17-143f55a8e953",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-l7 > .ui-n1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b0e34cd-a7d1-43d0-96f3-cb0b16fd8516",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=div:nth-child(1) > .c7w9 .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "198da193-6dda-4883-b4d6-0d23dab39912",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "2eeff268-d26c-40b7-b4cf-521748d294f2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3e41682-01ff-45f1-9097-d2e5d5780b85",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=div:nth-child(1) > .c7w9 .ui-k4:nth-child(1) .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9e047f7-9a1b-4e34-b377-8f09423c31b9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div/div/div[3]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "b50c5ffa-e8fd-4854-89d6-2817b1f7ce6e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='split-Main-0']/div[3]/div[2]/a/span",
+      "targets": [
+        ["css=.a7n3 > span", "css:finder"],
+        ["xpath=//div[@id='split-Main-0']/div[3]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Тестирование Дот Ком, или Пособие по жестокому обращению с багами в интернет-стартапах')]", "xpath:innerText"]
+      ],
+      "value": "${cart-book-name}"
+    }, {
+      "id": "c1517afc-afad-4ec6-ba2b-04e5f9ff99ff",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='split-Main-0']/div[3]/div[3]/div/div/span",
+      "targets": [
+        ["css=.a7o7 > span", "css:finder"],
+        ["xpath=//div[@id='split-Main-0']/div[3]/div[3]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1 121 ₽')]", "xpath:innerText"]
+      ],
+      "value": "${cart-book-price}"
+    }, {
+      "id": "81bdd6e6-4ce4-4ea2-b001-6d919e5491a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"split-Main-0\"]/div[3]/div[4]/div/div[1]/div/div[1]/div/div/div",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "89d78f5a-a21b-4edd-a93f-649fbf13021a",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div[2]/div[2]/span",
+      "targets": [
+        ["css=.a5n5", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/span", "xpath:position"]
+      ],
+      "value": "${cart-book-price}"
+    }, {
+      "id": "24913208-5d12-4c45-a49b-1cb9aac592d7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div[3]/span[2]",
+      "targets": [
+        ["css=.a5a6 > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/span[2]", "xpath:position"]
+      ],
+      "value": "${cart-book-price}"
+    }, {
+      "id": "6434fd21-944f-4b59-96f1-6e43a0186dc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"split-Main-0\"]/div[3]/div[2]/div[2]/span[2]",
+      "targets": [
+        ["css=.a7w:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='split-Main-0']/div[3]/div[2]/div[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45387c4a-3f94-48a6-8fd9-ecf88ddd6115",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//section/div[3]/div/button/div/div",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "715e7d85-ba61-4f3f-9e3d-c8c51c97de03",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//section/div[3]/div/button/div/div",
+      "targets": [
+        ["css=.q7 .ui-n1", "css:finder"],
+        ["xpath=//section/div[3]/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c435ffe-5de3-4590-947e-28941d4c0c80",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div/div/div[3]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "0f204c34-8de0-4764-b5c6-4675e5bfc564",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e19e4a71-e289-483d-8ff2-b982c436a480",
+    "name": "filters",
+    "commands": [{
+      "id": "e4702142-315e-4874-bb07-4e7334e39bf0",
+      "comment": "",
+      "command": "store",
+      "target": "5000",
+      "targets": [],
+      "value": "price-from"
+    }, {
+      "id": "600f3958-438d-4cf3-9251-24a393b8f88f",
+      "comment": "",
+      "command": "store",
+      "target": "7000",
+      "targets": [],
+      "value": "price-to"
+    }, {
+      "id": "f0945f93-7740-4a10-8983-a6f636879f1b",
+      "comment": "",
+      "command": "store",
+      "target": "1500",
+      "targets": [],
+      "value": "consumption-power-from"
+    }, {
+      "id": "e8084ba3-4e5d-412d-ad8e-02ab9d38b15e",
+      "comment": "",
+      "command": "store",
+      "target": "2500",
+      "targets": [],
+      "value": "consumption-power-to"
+    }, {
+      "id": "d2f716e5-12f8-410e-93f3-0b9d405f6bde",
+      "comment": "",
+      "command": "store",
+      "target": "300",
+      "targets": [],
+      "value": "suction-power-from"
+    }, {
+      "id": "99c16b07-04f4-40a4-a7a7-ac2a010f3ae5",
+      "comment": "",
+      "command": "store",
+      "target": "400",
+      "targets": [],
+      "value": "suction-power-to"
+    }, {
+      "id": "b8d32cc1-b56d-41a2-a47d-9764cca27e9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/category/pylesosy-i-aksessuary-10648/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ebbb7d5-9142-4066-8f82-d2f8b1a9eef4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adf9269e-f991-4748-ba61-32e11cdaad7a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[3]/div[1]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "2841ce68-6a9d-4dc3-bd85-f4108e79036e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[3]/div[1]/aside/div[1]/div/label",
+      "targets": [
+        ["css=.b7n:nth-child(2) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div/div/label/div", "xpath:idRelative"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c4b0eab-9568-4afa-9c50-0ed34b3f038b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[2]/div[2]/div[2]/div[1]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "868b0dcf-4597-4a33-a2dc-aae702a5e538",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[2]/div[2]/div[2]/div[1]/input",
+      "targets": [
+        ["css=.ui-a0i9 > .ui-av9", "css:finder"],
+        ["xpath=(//input[@name=''])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${price-from}"
+    }, {
+      "id": "fda7c103-1084-40e1-9c7d-d676b10bffa0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[2]/div[2]/div[2]/div[2]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "067efe64-07f9-4cc8-acfc-55f66e419d1c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[2]/div[2]/div[2]/div[2]/input",
+      "targets": [
+        ["css=.ui-a0i9 > .ui-av9", "css:finder"],
+        ["xpath=(//input[@name=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${price-to}"
+    }, {
+      "id": "1f8cd9d6-99b1-4572-9cb8-f0ebd5bbec1f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[5]/div[2]/div[2]/div[1]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "3edfb2e8-2663-4b03-9d9a-6d7cb00857e0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[5]/div[2]/div[2]/div[1]/input",
+      "targets": [],
+      "value": "${consumption-power-from}"
+    }, {
+      "id": "2143952f-d006-47ec-8930-e70441283d04",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[5]/div[2]/div[2]/div[2]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "cc08cd1d-7d6c-433d-8051-efd5066362e1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[5]/div[2]/div[2]/div[2]/input",
+      "targets": [],
+      "value": "${consumption-power-to}"
+    }, {
+      "id": "ec2e7111-eb9f-4ea7-9591-a67f49bbfe03",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[6]/div[2]/div[2]/div[1]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "d2fda11a-d880-4485-8274-a7cdf4598627",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[6]/div[2]/div[2]/div[1]/input",
+      "targets": [],
+      "value": "${suction-power-from}"
+    }, {
+      "id": "33b0139d-db32-4c7f-b3ff-e1c96e5164a3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[6]/div[2]/div[2]/div[2]/input",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "8fdb50ea-da91-4c2f-8444-1bf50ee9c71b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[6]/div[2]/div[2]/div[2]/input",
+      "targets": [],
+      "value": "${suction-power-to}"
+    }, {
+      "id": "10271775-ac8a-4e56-8f5d-0917484d3851",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div[2]/div/span[2]/label/div",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "7633470f-b7df-4520-b2dc-e057e0a532fa",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[7]/div[2]/div/span[2]/label/div[2]/span",
+      "targets": [],
+      "value": "type-of-dust-collector"
+    }, {
+      "id": "755c719d-27d4-47e7-87dc-fbcd3cef18ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div[2]/div/span[2]/label/div",
+      "targets": [
+        ["css=.b7n:nth-child(8) .c0y6:nth-child(2) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div[2]/div/span[2]/label/div", "xpath:idRelative"],
+        ["xpath=//span[2]/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ba635d-f61d-4351-ab9e-9c5b77926b39",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[8]/div[2]/div/span[2]/label/div",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "051ee0b6-39c1-436a-89dd-939e5f91b3b6",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[8]/div[2]/div/span[2]/label/div[2]/span",
+      "targets": [],
+      "value": "cleaning-type"
+    }, {
+      "id": "be7e4c2b-09bb-44c7-9e8d-0b076c03ba18",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[8]/div[2]/div/span[2]/label/div",
+      "targets": [
+        ["css=.b7n:nth-child(9) .c0y6:nth-child(2) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[8]/div[2]/div/span[2]/label/div", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/div/span[2]/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f622a22e-6930-4403-af2c-2a5b1473816e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[11]/div[2]/div/label/div[2]/div/div[2]",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "9410f525-520c-4d00-87f8-473201b14974",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[11]/div[2]/div/label/div[2]/div/div[2]",
+      "targets": [],
+      "value": "color"
+    }, {
+      "id": "00d394b8-c139-4b71-81af-903f5b7e89d6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[11]/div[2]/div/label/div",
+      "targets": [
+        ["css=.c0y > .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[11]/div[2]/div/label/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c06a6fe1-2a8c-4ccf-ac9a-95c3bf8cb193",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad68c38a-f84d-4d29-9d72-85c9ee6eef61",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[1]",
+      "targets": [],
+      "value": "actual-suction-power"
+    }, {
+      "id": "65c0dc82-ed8c-4882-884a-447a8fb30618",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[2]",
+      "targets": [],
+      "value": "actual-consumption-power"
+    }, {
+      "id": "b69dd7c4-41d3-43c0-9213-39bde38791f3",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[3]",
+      "targets": [],
+      "value": "actual-cleaning-type"
+    }, {
+      "id": "81f28296-7f10-4acd-91c1-22f9d857107d",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[4]",
+      "targets": [],
+      "value": "actual-type-of-dust-collector"
+    }, {
+      "id": "6e8ccf62-3de2-4799-91ce-7920bcab8d39",
+      "comment": "",
+      "command": "if",
+      "target": "${actual-suction-power} >= ${suction-power-from} && ${actual-suction-power} <= ${suction-power-to}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab1fc30b-f5cc-41c5-8129-7619371d5038",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09917a4c-bfe6-4a34-b816-5b06a9bfe488",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6504bb7-b251-48bb-a959-c1e7f4724a23",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73e264a8-be76-482c-b266-3ce3a7fec8ed",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8384256d-7874-4c8a-a81d-1f7ed6ad8bb9",
+      "comment": "",
+      "command": "if",
+      "target": "${actual-consumption-power} >= ${consumption-power-from} && ${actual-consumption-power} <= ${consumption-power-to}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b07dec1-a569-49c8-bba2-0d46e0af12f6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "564d90d6-20fe-4baf-81dd-202e85e32282",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58575d44-f917-4bab-8a1f-a42d2fe47e25",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85f52ecc-24a7-4330-acd7-cf13f6fdf821",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c5925da-1c88-4616-a95a-8ca55367cc2d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[3]",
+      "targets": [],
+      "value": "${cleaning-type}"
+    }, {
+      "id": "05782288-063d-4835-b3cd-2c538938d2a7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[1]/div/div/div[2]/div/span[1]/font[4]",
+      "targets": [],
+      "value": "${type-of-dust-collector}"
+    }, {
+      "id": "f246dd09-b39c-41a3-84fb-f095b65019fb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "89707b90-1076-448a-a7ff-8432664db462",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ozon.ru/", "https://www.ozon.ru/geo/moskva/", "https://www.ozon.ru/product/testirovanie-dot-kom-ili-posobie-po-zhestokomu-obrashcheniyu-s-bagami-v-internet-startapah-149612654/?asb=rms87oHDxXsdgqSw0rFaeGvNca5dVwg8KOsI2Hgu7OA%253D", "https://www.ozon.ru/category/pylesosy-i-aksessuary-10648/", "https://www.ozon.ru/product/testirovanie-dot-kom-ili-posobie-po-zhestokomu-obrashcheniyu-s-bagami-v-internet-startapah-149612654/"],
+  "plugins": []
+}

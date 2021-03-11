@@ -1,0 +1,959 @@
+{
+  "id": "e5d287c5-3fc2-42e1-88bf-47376c670693",
+  "version": "2.0",
+  "name": "OZON",
+  "url": "https://www.ozon.ru/product/otkuda-berutsya-druzya-razvivaem-emotsionalnyy-intellekt-180241509/?_bctx=CAYQkK4C",
+  "tests": [{
+    "id": "19f43c8b-537d-4450-adc9-2d93ab86dfa6",
+    "name": "Регистрация физического лица",
+    "commands": [{
+      "id": "c1cd2e27-7012-4480-8147-4fcaea570740",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "434f6415-5192-4cb1-bcd6-b534af2baacd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77e9554e-f018-4cf0-b093-9e336d2c5939",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.a7z7",
+      "targets": [
+        ["css=.a7z7", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea305225-aa41-45bb-9bfd-3e74c6ed5327",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.a7z7",
+      "targets": [
+        ["css=.a7h5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbc51bef-325f-4f61-96b0-3295a17ce42e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/header/div/div[4]/div/div[2]/div/div/button/div/div",
+      "targets": [
+        ["css=.a7o3:nth-child(1) .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[4]/div/div[2]/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f5d6183-ab95-4db6-8b49-d36cb87ea26d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/header/div/div[4]/div/div[2]/div/div/button/div/div",
+      "targets": [
+        ["css=.a7o3:nth-child(1) .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[4]/div/div[2]/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d96d0629-06ca-4837-88f6-a1e279b162eb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "f88638f7-b883-44f7-9236-aa03ae604b16",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=phone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d3f1082-60e6-42bd-b8fe-bc69a726c777",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[3]/button/div/div",
+      "targets": [
+        ["css=.ui-n1", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": "Получить код"
+    }, {
+      "id": "de974b54-8ad1-4f17-a020-62d5395e829e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Войти по почте",
+      "targets": [
+        ["linkText=Войти по почте", "linkText"],
+        ["css=.a1f0", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти по почте')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти по почте')]", "xpath:innerText"]
+      ],
+      "value": "Войти по почте"
+    }, {
+      "id": "61de7b72-74da-4028-bb02-c3fea00875e9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Войти по почте",
+      "targets": [
+        ["linkText=Войти по почте", "linkText"],
+        ["css=.a1f0", "css:finder"],
+        ["xpath=//a[contains(text(),'Войти по почте')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Войти по почте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5244df7-f3e0-4d3f-92fb-5349aa00c978",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.ui-av9", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='loginOrRegistration']/div[3]/div/label/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec88b5b-ad63-4e89-aa85-7cb7abf518c9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='loginOrRegistration']/div[4]/button/div/div",
+      "targets": [
+        ["css=.ui-n1", "css:finder"],
+        ["xpath=//div[@id='loginOrRegistration']/div[4]/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": "Получить код"
+    }, {
+      "id": "d509130b-cd00-45ce-ab03-e41b4e0b8480",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Вернуться на главный экран",
+      "targets": [
+        ["linkText=Вернуться на главный экран", "linkText"],
+        ["css=.a1f0", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться на главный экран')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться на главный экран')]", "xpath:innerText"]
+      ],
+      "value": "Вернуться на главный экран"
+    }, {
+      "id": "227ef2f6-450c-4483-8bde-3d1eeadc37b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вернуться на главный экран",
+      "targets": [
+        ["linkText=Вернуться на главный экран", "linkText"],
+        ["css=.a1f0", "css:finder"],
+        ["xpath=//a[contains(text(),'Вернуться на главный экран')]", "xpath:link"],
+        ["xpath=//div[@id='loginOrRegistration']/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Вернуться на главный экран')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5379ef76-0f8c-4d0a-a61c-e759b8ac4cd1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "72956f36-8345-4902-821b-c61a35a0d1c3",
+    "name": "Пункты выдачи",
+    "commands": [{
+      "id": "a5f8a446-f6b1-4a01-b982-18a4893c8d94",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d00ee2f-3ca8-4f90-ab4a-8e779a172b11",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56f35671-1a20-4764-a349-e76f7162cc03",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[contains(.,'Пункты выдачи')]",
+      "targets": [
+        ["css=.c7b9:nth-child(5) span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/ul/li[5]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[5]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Пункты выдачи')]", "xpath:innerText"]
+      ],
+      "value": "Пункты выдачи"
+    }, {
+      "id": "a28d95de-da87-4ea7-9eb2-f2e83cc881ae",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Пункты выдачи')]",
+      "targets": [
+        ["css=.c7b9:nth-child(5) span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/ul/li[5]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[5]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Пункты выдачи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72145938-0b7d-48e1-9861-e77067fe6fa9",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-m4 > .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//button/div/div", "xpath:position"]
+      ],
+      "value": "my_city"
+    }, {
+      "id": "e6148043-595c-4d82-a710-3d02616536c3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/h1",
+      "targets": [
+        ["css=.c6v5", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Москва - пункты выдачи заказов OZON. Карта ПВЗ и почтоматов, адреса доставки и режим работы')]", "xpath:innerText"]
+      ],
+      "value": "${my_city} - пункты выдачи заказов OZON"
+    }, {
+      "id": "77c9d315-210c-4562-89b4-63234c62bcf9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[1]/div/div[1]",
+      "targets": [
+        ["css=.a7m6", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2337760b-c4f3-4225-970a-51d9d006264c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]/div",
+      "targets": [
+        ["css=.a7m8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a60946c3-84c2-42d2-8344-6a56aa0d87a2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]/div",
+      "targets": [
+        ["css=.a7m8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Выбор пункта выдачи"
+    }, {
+      "id": "05052d9a-cbda-4ea8-a352-bc06dae134c2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Омск",
+      "targets": [
+        ["linkText=Омск", "linkText"],
+        ["css=.b7k7:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Омск')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/geo/omsk/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Омск')]", "xpath:innerText"]
+      ],
+      "value": "Омск"
+    }, {
+      "id": "01f2ce02-9c6b-4a0e-90fc-ff59a4764b86",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Уфа",
+      "targets": [
+        ["linkText=Уфа", "linkText"],
+        ["css=.b7k7:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Уфа')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/geo/ufa/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Уфа')]", "xpath:innerText"]
+      ],
+      "value": "Уфа"
+    }, {
+      "id": "d10a4feb-9244-4c53-b3ec-86d6dcc7b22f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Самара",
+      "targets": [
+        ["linkText=Самара", "linkText"],
+        ["css=.b7k7:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Самара')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/geo/samara/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Самара')]", "xpath:innerText"]
+      ],
+      "value": "Самара"
+    }, {
+      "id": "9539c11c-50c5-41b3-a8be-9891df3cfe57",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Нижний Новгород",
+      "targets": [
+        ["linkText=Нижний Новгород", "linkText"],
+        ["css=.b7k7:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Нижний Новгород')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/geo/nizhniy-novgorod/')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Нижний Новгород')]", "xpath:innerText"]
+      ],
+      "value": "Нижний Новгород"
+    }, {
+      "id": "a2890b3c-3e34-4c8d-827e-feb807a55290",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/div",
+      "targets": [
+        ["css=.b7k5", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div", "xpath:position"]
+      ],
+      "value": "Показать все"
+    }, {
+      "id": "dc13bced-c2d1-4044-872c-0cf61c84514b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dd22fe4a-bea4-42db-9f16-6d840562e520",
+    "name": "Каталог",
+    "commands": [{
+      "id": "11388de8-1d0f-423d-9a83-e1d0b3d3d072",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f21a351c-6168-4e5a-8a05-8f89009d7ec5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59efc0d0-95f8-4a95-be57-6b7a1a261518",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div/button/div/div",
+      "targets": [
+        ["css=.aq0 .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": "Каталог"
+    }, {
+      "id": "e0f18261-d950-4433-9069-cfd6e367f7f8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div/button/div/div",
+      "targets": [
+        ["css=.aq0 .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdcd3f19-83d1-4286-ac75-b67ed3afa529",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Книги",
+      "targets": [
+        ["linkText=Книги", "linkText"],
+        ["css=.a0v0", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div[2]/div/div/div/a[12]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/category/knigi-16500/')]", "xpath:href"],
+        ["xpath=//a[12]", "xpath:position"],
+        ["xpath=//a[contains(.,'Книги')]", "xpath:innerText"]
+      ],
+      "value": "Книги"
+    }, {
+      "id": "1e6a2ac2-39d6-4212-bde7-63cb3a6eaebb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Книги",
+      "targets": [
+        ["css=.a0v0 > .a0u8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/header/div/div[2]/div/div[2]/div/div/div/a[12]/span", "xpath:idRelative"],
+        ["xpath=//a[12]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Книги')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc392d0e-c36c-4738-bdfc-41c2bad291cd",
+      "comment": "",
+      "command": "waitForText",
+      "target": "xpath=//a[contains(text(),'Новинки')]",
+      "targets": [],
+      "value": "НОВИНКИ"
+    }, {
+      "id": "5a581cec-7e9a-48cf-a028-a3d33b34b29e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(text(),'Новинки')]",
+      "targets": [
+        ["css=.a5m0:nth-child(2) > .a5m1", "css:finder"],
+        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/highlight/38672/')]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "НОВИНКИ"
+    }, {
+      "id": "f2fcca13-ab1a-451c-9d1d-7f50a5122fdf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Новинки')]",
+      "targets": [
+        ["css=.a5m0:nth-child(2) > .a5m1", "css:finder"],
+        ["xpath=//a[contains(text(),'Новинки')]", "xpath:link"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/highlight/38672/')]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b1c1ee-97f3-4d07-98fb-15b4d6d2c4c6",
+      "comment": "Проверка наличия фильтров",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "88650787-92f1-421b-883e-f0c602d9d5b1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h1[contains(.,'Новинки книг 2020 года')]",
+      "targets": [
+        ["css=.b7k", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Новинки книг 2020 года')]", "xpath:innerText"]
+      ],
+      "value": "Новинки книг 2020 года"
+    }, {
+      "id": "c0b6b9a4-f35e-4d8f-b009-36edb3b9fbe6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//header[contains(.,'Категория')]",
+      "targets": [
+        ["css=.b6w7", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/section/header", "xpath:idRelative"],
+        ["xpath=//aside/section/header", "xpath:position"],
+        ["xpath=//header[contains(.,'Категория')]", "xpath:innerText"]
+      ],
+      "value": "Категория"
+    }, {
+      "id": "eab955a5-3c3c-49d1-a689-025d794f33f1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Со склада OZON')]",
+      "targets": [
+        ["css=.b7a9:nth-child(2) .b8i6", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div/div/label/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Со склада OZON')]", "xpath:innerText"]
+      ],
+      "value": "Со склада OZON"
+    }, {
+      "id": "fb8453a0-b6e6-49af-8bd9-405d224516a6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div",
+      "targets": [
+        ["css=.b7b0", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div", "xpath:idRelative"],
+        ["xpath=//aside/div[2]/div", "xpath:position"]
+      ],
+      "value": "Цена"
+    }, {
+      "id": "6cc0b4e8-babb-4702-98a1-60729a538d28",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Бестселлеры')]",
+      "targets": [
+        ["css=.b7a9:nth-child(4) .b8i6", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[3]/div/label/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Бестселлеры')]", "xpath:innerText"]
+      ],
+      "value": "Бестселлеры"
+    }, {
+      "id": "9672b4a8-6327-430f-a152-121d0d410c1b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Новинки ')]",
+      "targets": [
+        ["css=.b7n:nth-child(7) .a0g8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[6]/div/label/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/label/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Новинки ')]", "xpath:innerText"]
+      ],
+      "value": "Новинки"
+    }, {
+      "id": "562e3266-8ff3-4303-8d18-2b83b69b5187",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div/label/div[2]/div/span",
+      "targets": [
+        ["css=.b7n:nth-child(8) .a0g8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div/label/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[7]/div/label/div[2]/div/span", "xpath:position"]
+      ],
+      "value": "Высокий рейтинг"
+    }, {
+      "id": "2c3ed422-87c5-4e05-b8c7-77339a54db39",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Товары со скидкой ')]",
+      "targets": [
+        ["css=.b7n:nth-child(9) .a0g8", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[8]/div/label/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[8]/div/label/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Товары со скидкой ')]", "xpath:innerText"]
+      ],
+      "value": "Товары со скидкой"
+    }, {
+      "id": "80dae8ec-cbf7-4c23-a8a3-531d54a0c670",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Товары с Premium ценой')]",
+      "targets": [
+        ["css=.b7a9:nth-child(8) .b8i6", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[7]/div/label/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[7]/div/label/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Товары с Premium ценой')]", "xpath:innerText"]
+      ],
+      "value": "Товары с Premium ценой"
+    }, {
+      "id": "c49f327b-3648-4b8b-b268-e9230a2d52bf",
+      "comment": "Проверка, что все чекбоксы не заполнены",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "ef52c826-507d-4506-b207-8778df075a7a",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[1]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2dc99c5-5968-4ebc-a6d3-62c57be751ec",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[3]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da10b7da-c250-4fa6-b7bd-7e3b3acb9a5d",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[5]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a44b393-cf67-41b0-88ca-ce5b5ca09f27",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[6]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dda26d9-33bf-4ec1-b8b0-ed22c2c2eabb",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[7]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62791af0-303f-4549-82e2-51df6f780a76",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[8]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6140ec17-9ea1-4103-8207-def434c0d442",
+      "comment": "",
+      "command": "verifyNotChecked",
+      "target": "//*[@id=\"__ozon\"]/div/div[1]/div[3]/div[2]/div[1]/aside/div[9]/div/label/div[1]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6c4f9c3-3e4f-41ad-bb6c-18d0fb5e7507",
+      "comment": "Проверка добавления фильтров через чекбоксы",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "db349b65-2265-41fb-9126-f00a5dbcccca",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div/div/label/div",
+      "targets": [
+        ["css=.b6i4:nth-child(2) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div/div/label/div", "xpath:idRelative"],
+        ["xpath=//label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f76230ea-22f9-4422-b786-ff647c59dce6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div/button/div/div/span",
+      "targets": [
+        ["css=.b7f span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div/button/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button/div/div/span", "xpath:position"]
+      ],
+      "value": "Со склада OZON"
+    }, {
+      "id": "bec75564-5030-4be9-a9de-7cb448bf776a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[5]/div/label/div",
+      "targets": [
+        ["css=.b6i4:nth-child(4) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[3]/div/label/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a91415c8-b7b1-4058-9d72-181e247ed8cd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div[2]/button/div/div/span",
+      "targets": [
+        ["css=.b7f:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div[2]/button/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/button/div/div/span", "xpath:position"]
+      ],
+      "value": "Бестселлеры"
+    }, {
+      "id": "edbbf6a9-d4ee-4a53-8b70-92ce34c86cab",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[8]/div/label/div",
+      "targets": [
+        ["css=.b7n:nth-child(6) .ui-at4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[5]/div/label/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/label/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee74373e-7230-457d-99d0-a7b7d2afa1da",
+      "comment": "",
+      "command": "waitForText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div[3]/button/div/div/span",
+      "targets": [],
+      "value": "Товары со скидкой"
+    }, {
+      "id": "c18e1455-869b-42d2-9541-6d60b730a5ab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div[3]/button/div/div/span",
+      "targets": [
+        ["css=.b7f:nth-child(3) span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div/div[2]/div/div/div[3]/button/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button/div/div/span", "xpath:position"]
+      ],
+      "value": "Товары со скидкой"
+    }, {
+      "id": "1b91fed8-f2d3-4fa8-9314-791f7b561d67",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=(//input[@name=''])[3]",
+      "targets": [
+        ["css=.ui-a0i9 > .ui-av9", "css:finder"],
+        ["xpath=(//input[@name=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "c405272d-b134-4434-a029-253012e47d2a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=(//input[@name=''])[3]",
+      "targets": [
+        ["css=.ui-a0i9 > .ui-av9", "css:finder"],
+        ["xpath=(//input[@name=''])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div/aside/div[2]/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2f950713-ce54-496b-b104-312cbf9dc913",
+      "comment": "Проверка соответствия товара фильтрам",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "c53be405-0eb6-4aa9-b50a-ba5b730a96c3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div",
+      "targets": [
+        ["css=.a0c6:nth-child(1) .a0v0", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Бестселлер"
+    }, {
+      "id": "9e07f39c-3a82-4978-a9f5-596d50bb8b1d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/a/div/span",
+      "targets": [
+        ["css=.tile-link-hovered .a0y4", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/a/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'293 ₽')]", "xpath:innerText"]
+      ],
+      "value": "398 ₽"
+    }, {
+      "id": "525aea46-0b0f-4554-8a1a-1f653b90a7ad",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/a/div/span[2]",
+      "targets": [
+        ["css=.a0c6:nth-child(1) .b5v9", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/a/div/span[2]", "xpath:idRelative"],
+        ["xpath=//a/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'486 ₽')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2c1d870-47e9-406b-8f84-4dd443835df9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div[4]/span",
+      "targets": [
+        ["css=.a0c6:nth-child(1) .a2g6", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[3]/div[2]/div[2]/div[2]/div/div/div/div/div/div/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'OZON, доставка и склад OZON')]", "xpath:innerText"]
+      ],
+      "value": "OZON, доставка и склад OZON"
+    }, {
+      "id": "e13c17c5-befa-4e6f-b612-c8156f8cc37e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "baed5c6c-6a15-4645-b42c-668bfa3f3694",
+    "name": "Карточка товара",
+    "commands": [{
+      "id": "4813b586-1ae2-4c87-aec7-d2732c57c632",
+      "comment": "Перед запуском теста очистить корзину и выбрать город Москва",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "2a09eeff-a417-4e56-9944-fdd2fb7be89c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ozon.ru/product/otkuda-berutsya-druzya-razvivaem-emotsionalnyy-intellekt-180241509/?_bctx=CAYQkK4C",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00f31e3b-3811-4bf8-ac1f-c63efb87fc12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "122a46a2-6b25-4413-a802-b9b97349bccf",
+      "comment": "Запоминаем название товара",
+      "command": "storeText",
+      "target": "xpath=//h1[contains(.,'Откуда берутся друзья? Развиваем эмоциональный интеллект')]",
+      "targets": [
+        ["css=.b1c9", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[2]/div/div/div/div[2]/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Откуда берутся друзья? Развиваем эмоциональный интеллект')]", "xpath:innerText"]
+      ],
+      "value": "name"
+    }, {
+      "id": "c6623c22-3f9a-46a8-b415-0fac3b15f007",
+      "comment": "Запоминаем стоимость товара",
+      "command": "storeText",
+      "target": "xpath=//div[2]/div[2]/span/span",
+      "targets": [
+        ["css=.c8q7 > span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div[2]/div[2]/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span/span", "xpath:position"]
+      ],
+      "value": "price"
+    }, {
+      "id": "29ef8f5f-bac6-43ef-bc2b-44c029ec64b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-l7 > .ui-n1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": "Добавить в корзину"
+    }, {
+      "id": "d8b9ce4e-056b-4e62-a9c5-43336e467258",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-l7 > .ui-n1:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2297f17-eee8-4d66-abb8-c869f7060842",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div[2]/button/div/div",
+      "targets": [
+        ["css=.c7x4 .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div[2]/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div[2]/button/div/div", "xpath:position"]
+      ],
+      "value": "+1 шт."
+    }, {
+      "id": "9254235b-f24f-4522-aa91-c3b76655ffbb",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-l8 > .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": "В корзине 1 шт.\\nПерейти в корзину"
+    }, {
+      "id": "98733e9f-2d20-45c0-bc17-539b26b3e5c6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div",
+      "targets": [
+        ["css=.ui-l8 > .ui-n1", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div[4]/div[3]/div[2]/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/button/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div/div/button/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df17f617-2f80-4034-ac44-16710e90c1b9",
+      "comment": "Сравниваем название с запомненным на шаге 3",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Откуда берутся друзья? Развиваем эмоциональный интеллект')]",
+      "targets": [
+        ["css=.a7r > span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div/div/div/div[2]/div[3]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Откуда берутся друзья? Развиваем эмоциональный интеллект')]", "xpath:innerText"]
+      ],
+      "value": "${name}"
+    }, {
+      "id": "4c5efdef-70fd-4141-bef4-d10fdae54b6c",
+      "comment": "Сравниваем цену с запомненной на шаге 4",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div/div/div/div[2]/div[3]/div[3]/div/div/span",
+      "targets": [
+        ["css=.a7o5:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div/div/div/div[2]/div[3]/div[3]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'400 ₽')]", "xpath:innerText"]
+      ],
+      "value": "${price}"
+    }, {
+      "id": "23c5f417-b7ee-4ed8-92d9-0b4a012e6df1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div/span[2]",
+      "targets": [
+        ["css=.a5a5", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[4]/div[2]/div/section/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'1 товар • 50 гр')]", "xpath:innerText"]
+      ],
+      "value": "1 товар • 50 гр"
+    }, {
+      "id": "35a03ec0-da78-4bbe-b6f4-834646fa70b1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[3]/div/div/div/div/div",
+      "targets": [
+        ["css=.b3w", "css:finder"],
+        ["xpath=//div[@id='__ozon']/div/div/div/div/div[3]/div[3]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Корзина"
+    }, {
+      "id": "f819f965-026f-4434-81bb-a192d2b8f93b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f1549b98-982f-4712-858f-60d344a8d82c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19f43c8b-537d-4450-adc9-2d93ab86dfa6"]
+  }],
+  "urls": ["https://www.ozon.ru/", "https://www.ozon.ru/highlight/38672/?fast_delivery=t&is_premium=t&isbest=t&isdiscount=t", "https://www.ozon.ru/product/otkuda-berutsya-druzya-razvivaem-emotsionalnyy-intellekt-180241509/?_bctx=CAYQkK4C"],
+  "plugins": []
+}
